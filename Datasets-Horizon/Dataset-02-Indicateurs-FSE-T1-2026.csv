@@ -1,0 +1,21 @@
+Indicateur,Categorie,Cible_2026,Realise_T1,Ecart,Commentaire
+Beneficiaires_entres_total,Volumetrie,380,94,-1,Cible trimestrielle 95
+Beneficiaires_entres_femmes,Volumetrie,190,51,+3,Surrepresentation feminine T1
+Beneficiaires_entres_QPV,Volumetrie,152,42,+4,Bon recrutement QPV Marseille
+Beneficiaires_entres_sans_diplome,Volumetrie,228,58,+1,Aligne sur la cible
+Beneficiaires_handicap,Volumetrie,38,11,+2,Partenariat Cap Emploi efficace
+Sorties_positives_total,Resultat,228,42,-15,Sorties surtout en avril attendues
+Sorties_emploi_durable,Resultat,114,18,-11,Marche tendu en T1
+Sorties_formation_qualifiante,Resultat,76,16,+1,Conforme
+Sorties_creation_activite,Resultat,38,8,+1,Conforme
+Sorties_negatives_total,Resultat,76,12,-7,Bon T1
+Indemnites_versees_EUR,Financier,1710000,398000,-29500,Sous-consommation legere
+Heures_accompagnement_individuel,Activite,9120,2185,-95,Conforme
+Heures_ateliers_collectifs,Activite,4560,1142,+22,Bon rythme
+Heures_stages_entreprise,Activite,15200,3520,-280,Difficulte sourcing entreprises Marseille
+Cout_moyen_par_beneficiaire_EUR,Financier,4500,4385,-115,Maitrise des couts
+Taux_assiduite_moyen_pct,Qualite,80,84,+4,Au-dessus de la cible
+Satisfaction_beneficiaires_sur_10,Qualite,8,8.2,+0.2,Stable
+Reclamations_recues,Qualite,12,2,-1,RAS
+Audits_FSE_realises,Conformite,2,1,0,1 audit Lyon en mars OK
+Feuilles_temps_completes_pct,Conformite,100,97,-3,3 feuilles manquantes T1 - relance
