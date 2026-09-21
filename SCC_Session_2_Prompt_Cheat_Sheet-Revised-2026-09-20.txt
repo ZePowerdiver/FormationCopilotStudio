@@ -1,0 +1,118 @@
+SCC | MICROSOFT 365 COPILOT | SESSION 2 - EXCEL (WITH PIVOTTABLES) + ANALYST
+Prompt cheat sheet - Canadian Cancer Society - 21 September 2026
+Demonstration workbooks: SCC_Session_2_Excel_Demo_Data.xlsx / SCC_Session_2_Excel_Demo_Data_2025.xlsx
+All data is fictional. No donor, patient, volunteer or employee information.
+
+==============================================================================
+BLOCK 2 - ASK YOUR DATA (sheet: Payroll_Hours, table tbl_Hours)
+==============================================================================
+
+[ Orient ]
+Describe what this table contains: the columns, the period covered, the number of rows, and anything that looks inconsistent.
+
+[ Trend ]
+Show how total overtime pay changes month by month in this table. Point out the highest and lowest months and state the figures.
+
+[ Compare ]
+Compare total pay by region for this table. Rank the regions from highest to lowest and show each one as a percentage of the total.
+
+[ Formula column ]
+Add a column that shows overtime pay as a percentage of total pay for each row. Explain the formula before you insert it.
+
+[ Highlight ]
+Highlight every row where overtime hours are greater than 10, and tell me how many rows that is.
+
+[ Filter and sort ]
+Filter this table to the Ontario region for the April 2026 pay period, sorted by total pay from highest to lowest.
+
+==============================================================================
+BLOCK 2 - CATEGORISE (sheet: Needs_Cleanup, table tbl_Cleanup)
+==============================================================================
+
+[ Categorise ]
+The Category column uses inconsistent spelling and casing. Add a column that maps each entry to one standard category, and list any entry you could not classify.
+
+[ Flag the gaps ]
+List the rows where the category is blank or the amount is stored as text. Do not guess the missing values - just identify them.
+
+==============================================================================
+ANY TIME - AUDIT AN ANSWER
+==============================================================================
+
+[ Audit ]
+Which rows and which columns did you use for that figure, and what did you exclude?
+
+==============================================================================
+BLOCK 3 - PIVOTTABLES AND CHARTS
+==============================================================================
+
+[ Build (Payroll_Hours) ]
+Create a PivotTable from this table showing total pay by department, with pay periods across the columns.
+
+[ Percentage ]
+Show the same PivotTable as a percentage of the column total instead of dollar amounts.
+
+[ Top N (Program_Expenses) ]
+Show only the top five categories by total amount, and add the count of requests beside each one.
+
+[ Chart (Payroll_Hours) ]
+Create a column chart of total overtime pay by month from this table, with the months in calendar order and the axis labelled.
+
+[ Participant practice (Program_Expenses) ]
+Create a PivotTable from this table showing total amount by program and by category, filtered to approved requests only. Put programs down the side and categories across the top.
+
+==============================================================================
+BLOCK 4 - ANALYST : NOT RUN LIVE. Try these after the session with both
+workbooks attached in Microsoft Copilot (Agents > Analyst). Copilot in Excel can
+also import data from another workbook; use Analyst here for a consolidated
+multi-file analysis/report rather than edits to the open workbook.
+==============================================================================
+
+[ Compare two years ]
+Using the 2025 and 2026 workbooks I have attached, compare total pay by region between the two years. Show the change in dollars and as a percentage.
+
+[ Show your work ]
+Explain step by step how you calculated that, which columns you used from each file, and any assumption you had to make.
+
+[ Find a pattern ]
+Is there a seasonal pattern in overtime hours across both years? Show the monthly pattern as a chart and describe what you see.
+
+[ Bring it back to Excel ]
+Summarise the comparison as a table I can copy into Excel, with one row per region and columns for each year and the variance.
+
+==============================================================================
+KEY EXPECTED FIGURES (2026 workbook)
+==============================================================================
+  Payroll_Hours: 304 rows, 38 staff IDs, 8 monthly periods (Jan-Aug 2026)
+  Total pay: ~$1,592,104   Overtime pay: ~$33,415 (~2.1%)
+  Overtime by month: Jan 3,741 | Feb 3,702 | Mar 779 | Apr 10,772 | May 3,228 | Jun 2,767 | Jul 4,759 | Aug 3,667
+  Pay by region: National Office 363,154 | Ontario 281,019 | Quebec 264,564 | Atlantic 246,893 | BC & Yukon 238,424 | Prairies 198,050
+  Pay by department: Fundraising 374,451 | Program Delivery 371,131 | IT 301,150 | Communications 281,464 | Volunteer Services 163,727 | Finance 100,181
+  Overtime hours > 10: 17 rows.  Ontario April rows: 6, totalling ~$36,535
+  Program_Expenses: 264 rows, total ~$199,909; approved only: 188 rows, ~$140,373
+  Expenses by category: Venue Rental 54,239 | Training 37,661 | Software 24,844 | Catering 23,383 | Travel 22,078 | Printing 19,179 | Shipping 10,489 | Supplies 8,036
+  Approved by program: Community Fundraising 30,555 | Transportation 27,267 | Volunteer Training 25,867 | Advocacy 24,908 | Peer Support 15,895 | Awareness 15,881
+  Needs_Cleanup: 48 rows, 21 raw category spellings, 9 blank categories, 17 text amounts, 15 text dates
+  2025 workbook: 456 payroll rows (12 months, ~$2,211,742) - NOT directly comparable to 8 months of 2026
+  Like-for-like Jan-Aug: 2025 $1,465,979.97 | 2026 $1,592,104.03 | change +$126,124.06 (+8.6%)
+  Ask for the source rows, calculations and assumptions before attributing the variance.
+
+==============================================================================
+CURRENT PRODUCT NOTES - VERIFIED 20 SEPTEMBER 2026
+==============================================================================
+- Copilot in Excel supports Chat, Plan and Edit. Edit can make direct workbook
+  changes; some actions show Apply. Review the result and use Stop or Undo.
+- AutoSave may be on or off. Copilot editing requires Calculation Options =
+  Automatic. Use a modern .xlsx file and check that a SharePoint file is not
+  checked out.
+- Excel can import data from another workbook. Analyst is still appropriate for
+  consolidated analysis across multiple files and report-style output.
+- Do not use =COPILOT(). Microsoft retired the preview worksheet function on
+  14 September 2026; recalculation returns #NAME?. Use the Copilot pane.
+- Analyst availability depends on tenant administration.
+
+Microsoft references:
+https://support.microsoft.com/en-us/excel/copilot/get-started-with-copilot-in-excel
+https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-tips
+https://support.microsoft.com/en-us/excel/copilot/import-data-from-another-excel-file-with-copilot-in-excel
+https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-analyst-in-microsoft-365-copilot
